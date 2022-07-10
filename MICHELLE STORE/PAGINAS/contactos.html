@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contactos</h1>  
+  </header> 
+    <nav>
+        <ul>
+            <li><a href="../index.html">inicio</a></li>
+            <li><a href="../PAGINAS/contactos.html">contactos</a</li>
+             <li><a href="../PAGINAS/productos.html">productos</a></li>
+             <li><a href="../PAGINAS/politica.html">politica</a></li>
+             <li><a href="../PAGINAS/preguntas.html">preguntas</a></li>
+             <a href="#">Pie de pagina</a>
+        </ul>
+    </nav>  
+    <main>
+        <form action="contactos.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Principales</legend>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+            <input type="number" name="dni" id="dni" placeholder="Ingrese su dni" required>
+            <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
+            <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+        </fieldset>
+            <div>
+            <label for="sexo">Hombre</label>
+            <input type="radio" name="sexo" value="h">
+           <label for="sexo">Mujer</label>
+            <input type="radio" name="sexo" value="m">
+           <label for="sexo">Otro</label>
+            <input type="radio" name="sexo" value="o">
+        </div>
+        <div>
+            <label for="acepto">Acepta termino y condiciones</label>
+            <input type="checkbox" name="Acepto" value="si">
+            <select name="talle">
+                <option value="l">large</option>
+                <option value="m">medium</option>
+                <option value="s">small</option>
+            </select>
+        </div>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </form>
+    </main>
+    <footer id="pie">
+        <h5 class="piePagina">©2022 Michelle Aguirre, todos los derechos reservados</h5>
+    </footer>
+</body>
+</html>
